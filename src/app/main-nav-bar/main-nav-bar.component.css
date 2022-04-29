@@ -1,0 +1,49 @@
+/* .container {
+    max-width: 960px;
+  }
+*/
+
+/*
+* Custom translucent site header
+*/
+
+.modal {
+  width: 250px;
+}
+.modal-content {
+  width: 250px;
+}
+.list-group-item:hover {
+  background-color: rgba(59, 57, 57, 0.164);
+}
+
+.site-header {
+  background-color: rgba(7, 97, 43, 0.85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.site-header a {
+  color: #ffffff;
+  transition: color .15s ease-in-out;
+}
+
+.site-header a:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+/*
+* Extra utilities
+*/
+
+/* 
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+} 
+*/

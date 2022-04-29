@@ -1,0 +1,87 @@
+/* .container {
+    max-width: 960px;
+  }
+*/
+
+/*
+* Custom translucent site header
+*/
+
+.site-header {
+  background-color: rgba(7, 97, 43, 0.85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.site-header a {
+  color: #ffffff;
+  transition: color .15s ease-in-out;
+}
+
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+  * Extra utilities
+  */
+
+/* 
+  .flex-equal > * {
+    flex: 1;
+  }
+  @media (min-width: 768px) {
+    .flex-md-equal > * {
+      flex: 1;
+    }
+  } 
+  */
+
+
+
+.th {
+  width: 50px;
+}
+.td {
+  width: 50px;
+}
+
+.main-content-text {
+  margin-top: 50px;
+  align-items: center;
+  /*não ta funcionando parece*/
+  justify-content: center;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.example-container {
+  width: cover;
+  height: cover;
+  margin: 0px;
+  /* border: 1px solid #555; */
+  background-color: white;
+}
+
+.image-main-content {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+/* mat-drawer {
+    background-color: white;
+    talvez seria bom deixar responsivo essa side-left menu
+    width: 250px;
+}
+
+mat-drawer-content {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+} */

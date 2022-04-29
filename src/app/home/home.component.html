@@ -1,0 +1,127 @@
+
+<header class="site-header sticky-top py-1">
+  <nav class="container d-flex flex-column flex-md-row justify-content-between">
+    <a class="py-2" routerLink="" aria-label="Product">
+      <a routerLink="">
+        <img src="../../assets/nav-bar/world-icon.ico" class="d-block mx-auto">
+    </a>
+    </a>
+    
+    <a class="py-2 d-none d-md-inline-block" routerLink="desert">Deserto</a>
+    <a class="py-2 d-none d-md-inline-block" routerLink="taiga">Taiga</a>
+    <a class="py-2 d-none d-md-inline-block" routerLink="jungle">Selva</a>
+    <a class="py-2 d-none d-md-inline-block" routerLink="swamp">Pantanal</a>
+    <a class="py-2 d-none d-md-inline-block" routerLink="cerrado">Cerrado</a>
+    <a class="py-2 d-none d-md-inline-block" routerLink="tundra">Tundra</a>
+    <a class="py-2 d-none d-md-inline-block" routerLink="savannah">Savana</a>
+    <a class="py-2 d-none d-md-inline-block" routerLink="prairie">Pradaria</a>
+  </nav>
+</header>
+
+<div class="position-relative overflow-hidden text-center bg-light image-header-home">
+  <div class="col-md-5 p-lg-5 mx-auto my-5">
+    <h1 class="display-4 fw-normal text-white" style="background-color: rgba(169, 169, 169, 0.508);">Paisagens Views</h1>
+    <p class="lead fw-normal text-white" style="background-color: rgba(169, 169, 169, 0.508);">Descubra mais do que esse 
+      vasto mundo pode nos oferecer, explore os biomas! explore Paisagens Views!!</p>
+    <a class="btn btn-outline-secondary text-white bg-dark" href="#">Explorar rondomicamente</a>
+  </div>
+</div>
+<div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+  <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 py-3">
+      <h2 class="display-5">Deserto</h2>
+      <p class="lead">Pequena descrição</p>
+    </div>
+    <div class="bg-body shadow-sm mx-auto" (click)="selectBiome('desert')"
+      style="width: 80%; height: 300px; border-radius: 35px 35px 0 0;">
+      <img src="{{assetsFolder}}/desert600x400.png" style="width: 100%; height: 100%; 
+      border-top-left-radius: 35px; border-top-right-radius: 35px;">
+    </div>
+  </div>
+  <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 py-3">
+      <h2 class="display-5">Taiga</h2>
+      <p class="lead">Pequena descrição</p>
+    </div>
+    <div class="bg-body shadow-sm mx-auto" (click)="selectBiome('taiga')"
+      style="width: 80%; height: 300px; border-radius: 35px 35px 0 0;">
+      <img src="{{assetsFolder}}/desert600x400.png" style="width: 100%; height: 100%; 
+      border-top-left-radius: 35px; border-top-right-radius: 35px;">
+    </div>
+  </div>
+</div>
+
+<div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+  <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 py-3">
+      <h2 class="display-5">Selva</h2>
+      <p class="lead">Pequena descrição</p>
+    </div>
+    <div class="bg-body shadow-sm mx-auto" (click)="selectBiome('jungle')"
+      style="width: 80%; height: 300px; border-radius: 35px 35px 0 0;">
+      <img src="{{assetsFolder}}/desert600x400.png" style="width: 100%; height: 100%; 
+      border-top-left-radius: 35px; border-top-right-radius: 35px;">
+    </div>
+  </div>
+  <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 py-3">
+      <h2 class="display-5">Pantanal</h2>
+      <p class="lead">Pequena descrição</p>
+    </div>
+    <div class="bg-body shadow-sm mx-auto" (click)="selectBiome('swamp')"
+      style="width: 80%; height: 300px; border-radius: 35px 35px 0 0;">
+      <img src="{{assetsFolder}}/desert600x400.png" style="width: 100%; height: 100%; 
+      border-top-left-radius: 35px; border-top-right-radius: 35px;">
+    </div>
+  </div>
+</div>
+
+<div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+  <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 py-3">
+      <h2 class="display-5">Cerrado</h2>
+      <p class="lead">Pequena descrição</p>
+    </div>
+    <div class="bg-body shadow-sm mx-auto" (click)="selectBiome('cerrado')"
+      style="width: 80%; height: 300px; border-radius: 35px 35px 0 0;">
+      <img src="{{assetsFolder}}/desert600x400.png" style="width: 100%; height: 100%; 
+      border-top-left-radius: 35px; border-top-right-radius: 35px;">
+    </div>
+  </div>
+  <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 py-3">
+      <h2 class="display-5">Tundra</h2>
+      <p class="lead">Pequena descrição</p>
+    </div>
+    <div class="bg-body shadow-sm mx-auto" (click)="selectBiome('tundra')"
+      style="width: 80%; height: 300px; border-radius: 35px 35px 0 0;">
+      <img src="{{assetsFolder}}/desert600x400.png" style="width: 100%; height: 100%; 
+      border-top-left-radius: 35px; border-top-right-radius: 35px;">
+    </div>
+  </div>
+</div>
+
+<div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+  <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 py-3">
+      <h2 class="display-5">Savana</h2>
+      <p class="lead">Pequena descrição</p>
+    </div>
+    <div class="bg-body shadow-sm mx-auto" (click)="selectBiome('savannah')"
+      style="width: 80%; height: 300px; border-radius: 35px 35px 0 0;">
+      <img src="{{assetsFolder}}/desert600x400.png" style="width: 100%; height: 100%; 
+      border-top-left-radius: 35px; border-top-right-radius: 35px;">
+    </div>
+  </div>
+  <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 py-3">
+      <h2 class="display-5">Pradaria</h2>
+      <p class="lead">Pequena descrição</p>
+    </div>
+    <div class="bg-body shadow-sm mx-auto" (click)="selectBiome('prairie')"
+      style="width: 80%; height: 300px; border-radius: 35px 35px 0 0;">
+      <img src="{{assetsFolder}}/desert600x400.png" style="width: 100%; height: 100%; 
+      border-top-left-radius: 35px; border-top-right-radius: 35px;">
+    </div>
+  </div>
+</div>
