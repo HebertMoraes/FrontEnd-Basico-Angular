@@ -4,7 +4,20 @@
 } 
 */
 
-/* imagem do header */
+/* .site-header {
+  background-color: rgba(7, 97, 43, 0.85);
+} */
+
+.site-header a {
+  color: #ffffff;
+  transition: color .15s ease-in-out;
+}
+
+.site-header a:hover {
+  color: rgb(0, 162, 5);
+  text-decoration: none;
+}
+
 .image-header-home {
 
   background-image: url('../../assets/home/header-plant.jpg');
@@ -19,34 +32,9 @@
   align-items: center;
 }
 
-/*
-* Extra utilities
-*/
-
-.flex-equal>* {
-  flex: 1;
-}
-
 @media (min-width: 768px) {
   .flex-md-equal>* {
     flex: 1;
   }
 }
 
-/* abaixo é o do header */
-
-.site-header {
-  background-color: rgba(7, 97, 43, 0.85);
-  /* -webkit-backdrop-filter: saturate(180%) blur(20px); */
-  /* backdrop-filter: saturate(180%) blur(20px); */
-}
-
-.site-header a {
-  color: #ffffff;
-  transition: color .15s ease-in-out;
-}
-
-.site-header a:hover {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-}
