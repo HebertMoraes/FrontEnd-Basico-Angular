@@ -1,72 +1,85 @@
 <nav class="navbar navbar-light bg-light shadow fixed-top">
   <div class="container-fluid">
-    <a routerLink="">
+    <a routerLink="" class="position-relative start-50">
       <img src="../../../assets/nav-bar/world-icon.ico">
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <!-- ngIf se widht for maior que 1024 não aparece isso-->
+    <button class="nav-bar-actual navbar-toggler position-end" type="button" data-bs-toggle="modal"
+      data-bs-target="#exampleModal">
       <span class="navbar-toggler-icon"></span>
     </button>
   </div>
 </nav>
+<div class="nav-bar-actual">
+  <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLabel"> Paisagens Views </h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
 
-<div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-fullscreen">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2 class="modal-title" id="exampleModalLabel"> Paisagens Views </h2>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" (click)="selectLocation('desert')">Deserto
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item" (click)="selectLocation('desert/sahara')">Deserto do Saara</li>
+                <li class="list-group-item" (click)="selectLocation('desert/arabian')">Deserto da Arábia
+                </li>
+                <li class="list-group-item" (click)="selectLocation('desert/patagonia')">Deserto da
+                  Patagônia</li>
+                <li class="list-group-item" (click)="selectLocation('desert/atacama')">Deserto do Atacama
+                </li>
+              </ul>
+            </li>
+            <li class="list-group-item" (click)="selectLocation('taiga')">Taiga</li>
+            <li class="list-group-item" (click)="selectLocation('jungle')">Selva</li>
+            <li class="list-group-item" (click)="selectLocation('swamp')">Pantanal</li>
+            <li class="list-group-item" (click)="selectLocation('cerrado')">Cerrado</li>
+            <li class="list-group-item" (click)="selectLocation('tundra')">Tundra</li>
+            <li class="list-group-item" (click)="selectLocation('savannah')">Savana</li>
+            <li class="list-group-item" (click)="selectLocation('prairie')">Pradaria</li>
+          </ul>
 
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item" (click)="selectLocation('desert')">Deserto
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item" (click)="selectLocation('desert/sahara')">Deserto do Saara</li>
-              <li class="list-group-item" (click)="selectLocation('desert/arabian')">Deserto da Arábia
-              </li>
-              <li class="list-group-item" (click)="selectLocation('desert/patagonia')">Deserto da
-                Patagônia</li>
-              <li class="list-group-item" (click)="selectLocation('desert/atacama')">Deserto do Atacama
-              </li>
-            </ul>
-          </li>
-          <li class="list-group-item" (click)="selectLocation('taiga')">Taiga</li>
-          <li class="list-group-item" (click)="selectLocation('jungle')">Selva</li>
-          <li class="list-group-item" (click)="selectLocation('swamp')">Pantanal</li>
-          <li class="list-group-item" (click)="selectLocation('cerrado')">Cerrado</li>
-          <li class="list-group-item" (click)="selectLocation('tundra')">Tundra</li>
-          <li class="list-group-item" (click)="selectLocation('savannah')">Savana</li>
-          <li class="list-group-item" (click)="selectLocation('prairie')">Pradaria</li>
-        </ul>
-
-      </div>
-      <!-- <div class="modal-footer">
+        </div>
+        <!-- <div class="modal-footer">
           </div> -->
+      </div>
     </div>
   </div>
 </div>
+<!-- <aside class="side-menu-xl col">
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul>
+</aside> -->
+
+<div class="side-menu-xl container">
+
+  <ul class="sidebar-2">
+    <li><span>Travelers</span></li>
+    <li><span><i class="fa fa-home"></i></span><span>Home</span></li>
+    <li><span><i class="fa fa-dashboard"></i></span><span>Dashboard</span></li>
+    <li><span><i class="fa fa-users"></i></span><span>Users</span></li>
+    <li><span><i class="fa fa-shopping-cart"></i></span><span>Products</span></li>
+    <li><span><i class="fa fa-bookmark"></i></span><span>Bookmarks</span></li>
+    <li><span><i class="fa fa-gear"></i></span><span>Settings</span></li>
 
 
-<!-- <header class="site-header fixed-top py-1">
-  <nav class="container d-flex flex-column flex-md-row justify-content-between">
-    <a class="py-2" routerLink="" aria-label="Product">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
-        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img"
-        viewBox="0 0 24 24">
-        <title>Home</title>
-        <circle cx="12" cy="12" r="10" />
-        <path
-          d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
-      </svg>
-    </a>
-    
-    <a class="py-2 d-none d-md-inline-block" routerLink="desert">Deserto</a>
-    <a class="py-2 d-none d-md-inline-block" routerLink="taiga">Taiga</a>
-    <a class="py-2 d-none d-md-inline-block" routerLink="jungle">Selva</a>
-    <a class="py-2 d-none d-md-inline-block" routerLink="swamp">Pantanal</a>
-    <a class="py-2 d-none d-md-inline-block" routerLink="cerrado">Cerrado</a>
-    <a class="py-2 d-none d-md-inline-block" routerLink="tundra">Tundra</a>
-    <a class="py-2 d-none d-md-inline-block" routerLink="savannah">Savana</a>
-    <a class="py-2 d-none d-md-inline-block" routerLink="prairie">Pradaria</a>
-  </nav>
-</header> -->
+  </ul>
+
+  <div class="content">
+
+  </div>
+</div>

@@ -3,47 +3,133 @@
   }
 */
 
-/*
-* Custom translucent site header
-*/
-
 .modal {
-  width: 250px;
-}
+  width: 80%;
+} 
 .modal-content {
-  width: 250px;
+  width: 80%;
 }
+.nav a{
+  margin-left: 30%;
+}
+
+@media (min-width: 425px) {
+  .modal {
+    width: 60%;
+  }
+  .modal-content {
+    width: 60%;
+  }
+
+  .nav a{
+    margin-left: 40%;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal {
+    width: 40%;
+  }
+  .modal-content {
+    width: 40%;
+  }
+
+  .nav a{
+    margin-left: 50%;
+  }
+}
+
 .list-group-item:hover {
   background-color: rgba(59, 57, 57, 0.164);
 }
 
-.site-header {
-  background-color: rgba(7, 97, 43, 0.85);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
-}
-
-.site-header a {
-  color: #ffffff;
-  transition: color .15s ease-in-out;
-}
-
-.site-header a:hover {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-}
-
-/*
-* Extra utilities
-*/
-
-/* 
-.flex-equal > * {
-  flex: 1;
-}
-@media (min-width: 768px) {
-  .flex-md-equal > * {
-    flex: 1;
+@media (max-width: 1024px) {
+  .nav-bar-actual { 
+    display: block;
   }
-} 
-*/
+  .side-menu-xl{
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-bar-actual { 
+    display: none;
+  }
+  .side-menu-xl{
+    display: block;
+    padding-top: 5%;
+  }
+}
+
+
+
+
+/* .container{
+  height:100vh;
+  background-color:#ccc;
+  position:relative;
+} */
+
+.sidebar-2{
+  position:fixed;
+  background-color:#fff;
+  height:100vh;
+  width:140px;
+  z-index:10;
+  padding-left:20px;
+  box-shadow:0px 15px 30px rgba(0,0,0,0.1);
+}
+.sidebar li:nth-child(1){
+      text-align: center;
+  padding: 15px 5px;
+  display: flex;
+  justify-content: center;
+  margin-right: 19px;
+  font-size: 36px;
+  font-weight: 900;
+  font-style: italic;
+  font-family: emoji;
+  padding-top:30px;
+}
+
+
+.sidebar li:hover:nth-child(1){
+  padding:30px 0px;
+  background-color:transparent;
+  color:#000;
+}
+
+.sidebar li{
+  padding:12px;
+  cursor:pointer;
+  transition:all 0.5s;
+  letter-spacing:1px;
+  display:flex;
+  align-items:center;
+   gap:10px;
+  border-top-left-radius:30px;
+  border-bottom-left-radius:30px;
+}
+
+.sidebar li span:nth-child(1){
+  font-size:20px;
+}
+
+.sidebar li span:nth-child(2){
+  font-size:16px;
+}
+
+.sidebar li:hover{
+  background-color:#EA2C62;
+  padding:12px;
+  color:#fff;
+  transition:all 0.5s;
+   
+}
+
+
+.container .content{
+  
+  padding-left:75px;
+}

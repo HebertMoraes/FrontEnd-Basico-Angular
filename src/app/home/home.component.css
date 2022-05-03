@@ -15,7 +15,14 @@
 
 .site-header a:hover {
   color: rgb(0, 162, 5);
-  text-decoration: none;
+}
+
+.site-header h1 {
+  background-color: rgba(169, 169, 169, 0.508);
+}
+
+.site-header p {
+  background-color: rgba(169, 169, 169, 0.508);
 }
 
 .image-header-home {
@@ -32,9 +39,9 @@
   align-items: center;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .flex-md-equal>* {
     flex: 1;
   }
-}
+} */
 
