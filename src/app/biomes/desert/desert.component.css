@@ -23,26 +23,10 @@
   text-decoration: none;
 }
 
-/*
-  * Extra utilities
-  */
-
-/* 
-  .flex-equal > * {
-    flex: 1;
-  }
-  @media (min-width: 768px) {
-    .flex-md-equal > * {
-      flex: 1;
-    }
-  } 
-  */
-
-
-
 .th {
   width: 50px;
 }
+
 .td {
   width: 50px;
 }
@@ -50,7 +34,6 @@
 .main-content-text {
   margin-top: 50px;
   align-items: center;
-  /*não ta funcionando parece*/
   justify-content: center;
   padding: 12px;
   display: flex;
@@ -62,7 +45,6 @@
   width: cover;
   height: cover;
   margin: 0px;
-  /* border: 1px solid #555; */
   background-color: white;
 }
 
@@ -71,17 +53,49 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
+  width: 100%;
 }
 
-/* mat-drawer {
-    background-color: white;
-    talvez seria bom deixar responsivo essa side-left menu
-    width: 250px;
+img {
+  min-width: 200px;
+  max-width: 200px;
+  max-height: 200px;
+
+  height: 200px;
+  width: 200px;
 }
 
-mat-drawer-content {
-    padding: 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-} */
+@media (max-width: 575px) {
+  .image-main-content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1023px) {
+  img {
+    min-width: 200px;
+    max-width: 200px;
+    max-height: 200px;
+  
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-content-text {
+    padding-left: 200px;
+  }
+
+  img {
+    min-width: 300px;
+    max-width: 300px;
+    max-height: 300px;
+
+    height: 300px;
+    width: 300px;
+  }
+}

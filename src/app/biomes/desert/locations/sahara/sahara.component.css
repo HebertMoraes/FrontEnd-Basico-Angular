@@ -1,10 +1,15 @@
 .main-content-text {
     margin-top: 50px;
     align-items: center;
-    /*não ta funcionando parece*/
     justify-content: center;
     padding: 12px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  @media (min-width: 1024px) {
+    .main-content-text { 
+      padding-left: 200px;
+    }
   }
