@@ -22,6 +22,9 @@ import { SaharaComponent } from './biomes/desert/locations/sahara/sahara.compone
 import { ArabianComponent } from './biomes/desert/locations/arabian/arabian.component';
 import { PatagoniaComponent } from './biomes/desert/locations/patagonia/patagonia.component';
 import { AtacamaComponent } from './biomes/desert/locations/atacama/atacama.component';
+import { FavoritesComponent } from './favorites/favorites.component';
+import { CarrouselImgsComponent } from './carrousel-imgs/carrousel-imgs.component';
+import { DinamicTableComponent } from './dinamic-table/dinamic-table.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +43,9 @@ import { AtacamaComponent } from './biomes/desert/locations/atacama/atacama.comp
     ArabianComponent,
     PatagoniaComponent,
     AtacamaComponent,
+    FavoritesComponent,
+    CarrouselImgsComponent,
+    DinamicTableComponent,
   ],
   imports: [
 

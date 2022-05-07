@@ -31,7 +31,9 @@
               "src/styles.css"
             ],
             "scripts": [
-              "src/assets/javascript_files/teste.js"
+              "src/assets/javascript_files/teste.js",
+              "src/assets/javascript_files/carrousel/carrousel.js",
+              "src/assets/javascript_files/dinamic_table/dinamic_table.js"
             ]
           },
           "configurations": {

@@ -12,6 +12,7 @@ import { SavannahComponent } from './biomes/savannah/savannah.component';
 import { SwampComponent } from './biomes/swamp/swamp.component';
 import { TaigaComponent } from './biomes/taiga/taiga.component';
 import { TundraComponent } from './biomes/tundra/tundra.component';
+import { FavoritesComponent } from './favorites/favorites.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
@@ -28,6 +29,7 @@ const routes: Routes = [
   { path: 'tundra', component: TundraComponent},
   { path: 'savannah', component: SavannahComponent},
   { path: 'prairie', component: PrairieComponent},
+  { path: 'favorites', component: FavoritesComponent},
   
   { path: '**', redirectTo: '' }
 ];
