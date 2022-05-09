@@ -1,0 +1,136 @@
+/* *,
+*:before,
+*:after {
+  box-sizing: border-box;
+} */
+
+.carousel {
+    position: relative;
+    width: 70%;
+    height: 220px;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 7%;
+    margin-left: 7%;
+}
+
+.carousel-content {
+    position: relative;
+    overflow: hidden;
+    transition: width .4s;
+    height: 100%;
+}
+
+.slide {
+    height: 100%;
+    /* background-color: magenta; */
+    position: absolute;
+    z-index: 1;
+    transition: left .4s cubic-bezier(.47, .13, .15, .89);
+}
+
+.slide-1 {
+    /* background-color: green; */
+    background-image: url(src\assets\biomes\desert\person-in-desert.jpeg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.slide-2 {
+    /* background-color: green; */
+    background-image: url(src\assets\home\biomes-brazil.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.slide-3 {
+    /* background-color: red; */
+    background-image: url(src\assets\home\desert600x400.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.slide-4 {
+    /* background-color: purple; */
+    background-image: url(src\assets\home\header-plant.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.slide-5 {
+    /* background-color: yellow; */
+    background-image: url(src\assets\home\biomes-brazil.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.nav {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    background-color: rgba(150, 150, 150, .3);
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    color: white;
+    /* -webkit-user-select: none; */
+}
+
+.nav-left {
+    left: -25px;
+}
+
+.nav-right {
+    right: -25px;
+}
+
+.carousel-arrow-icon-left {
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
+.carousel-arrow-icon-right {
+    margin-left: 7px;
+    margin-top: 2px;
+}
+
+.iconeFavorito {
+    background-image: url(src\assets\biomes\desert\favorito.png);
+    width: 32px;
+    height: 32px;
+    z-index: -1;
+    cursor: pointer;
+}
+
+.favorito {
+    background-image: url(src\assets\biomes\desert\favoritado.png);
+}
+
+@media (min-width: 320px) {
+    .carousel {
+        position: relative;
+        width: 70%;
+        height: 220px;
+        margin: 0 auto;
+        margin-top: 5%;
+        margin-bottom: 7%;
+        margin-left: 15%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .carousel {
+        position: relative;
+        width: 70%;
+        height: 220px;
+        margin: 0 auto;
+        margin-top: 5%;
+        margin-bottom: 7%;
+        margin-left: 24%;
+    }
+}

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CarrouselImgsComponent } from './carrousel-imgs.component';
+import { CarrouselComponent } from './carrousel.component';
 
-describe('CarrouselImgsComponent', () => {
-  let component: CarrouselImgsComponent;
-  let fixture: ComponentFixture<CarrouselImgsComponent>;
+describe('CarrouselComponent', () => {
+  let component: CarrouselComponent;
+  let fixture: ComponentFixture<CarrouselComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CarrouselImgsComponent ]
+      declarations: [ CarrouselComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CarrouselImgsComponent);
+    fixture = TestBed.createComponent(CarrouselComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

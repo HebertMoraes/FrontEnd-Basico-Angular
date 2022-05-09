@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 
 declare function PopUpHello(): void;
 
-declare function LoadTableData(): void;
+// declare function adicionaLinha(): void;
 
 @Component({
   selector: 'app-desert',
