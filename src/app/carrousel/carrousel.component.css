@@ -31,7 +31,8 @@
 
 .slide-1 {
     /* background-color: green; */
-    background-image: url(src\assets\biomes\desert\person-in-desert.jpeg);
+    /* background-image: url(src\assets\biomes\desert\person-in-desert.jpeg); */
+    background-image: url(src\assets\home\header-plant.jpg);
     background-position: center;
     background-size: cover;
 

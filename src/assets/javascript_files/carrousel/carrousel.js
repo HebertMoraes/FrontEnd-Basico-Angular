@@ -125,59 +125,6 @@ window.addEventListener('load', (event) => {
     firstSlide.removeEventListener('transitionend', replaceToEnd);
   }
 
-  if (carouselContent !== null) {
-    carouselContent.addEventListener('mousedown', seeMovement);
-  }
-
-  var initialX;
-  var initialPos;
-  function seeMovement(e) {
-    initialX = e.clientX;
-    getInitialPos();
-    carouselContent.addEventListener('mousemove', slightMove);
-    document.addEventListener('mouseup', moveBasedOnMouse);
-  }
-
-  function slightMove(e) {
-    if (moving) {
-      var movingX = e.clientX;
-      var difference = initialX - movingX;
-      if (Math.abs(difference) < (lengthOfSlide / 4)) {
-        slightMoveSlides(difference);
-      }
-    }
-  }
-
-  function getInitialPos() {
-    var slides = document.querySelectorAll('.slide');
-    var slidesArray = Array.prototype.slice.call(slides);
-    initialPos = [];
-    slidesArray.forEach(function (el) {
-      var left = Math.floor(parseInt(el.style.left.slice(0, -2)));
-      initialPos.push(left);
-    });
-  }
-
-  function slightMoveSlides(newX) {
-    var slides = document.querySelectorAll('.slide');
-    var slidesArray = Array.prototype.slice.call(slides);
-    slidesArray.forEach(function (el, i) {
-      var oldLeft = initialPos[i];
-      el.style.left = (oldLeft + newX) + "px";
-    });
-  }
-
-  function moveBasedOnMouse(e) {
-    var finalX = e.clientX;
-    if (initialX - finalX > 0) {
-      moveRight();
-    } else if (initialX - finalX < 0) {
-      moveLeft();
-    }
-    document.removeEventListener('mouseup', moveBasedOnMouse);
-    carouselContent.removeEventListener('mousemove', slightMove);
-  }
-
   function favorito() {
     var icone = this;
     if (icone.classList.contains('favorito')) {
