@@ -25,6 +25,7 @@ import { AtacamaComponent } from './biomes/desert/locations/atacama/atacama.comp
 import { FavoritesComponent } from './favorites/favorites.component';
 import { DinamicTableComponent } from './dinamic-table/dinamic-table.component';
 import { CarrouselComponent } from './carrousel/carrousel.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { CarrouselComponent } from './carrousel/carrousel.component';
     CommonModule,
 
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     MatNativeDateModule, 
     MaterialAllExampleModule,

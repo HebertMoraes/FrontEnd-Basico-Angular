@@ -1,4 +1,3 @@
-
 .site-header a {
   color: #ffffff;
   transition: color .15s ease-in-out;
@@ -23,9 +22,16 @@
   padding: 3em;
   text-align: center;
   background-size: cover;
-  
-  width: 100%; 
+
+  width: 100%;
   height: 400px;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 1400px) {
+  #content-conteiner {
+    margin-right: 0;
+    margin-left: 11%;
+  }
 }

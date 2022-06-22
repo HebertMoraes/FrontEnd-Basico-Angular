@@ -1,19 +1,97 @@
 <main-nav-bar></main-nav-bar>
 
-<div class="main-content-text container">
+<div class="row">
+    <aside class="col-3 d-none d-md-block bg-light">
 
-    <h2 style="color: black; margin-left: 20px; margin-top: 10px;"> Deserto do Saara </h2>
+        <div class="p-3 bg-light" style="margin-top: 70px; position: fixed;" id="fixed-side-menu-left">
+            <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+                <svg class="bi me-2" width="30" height="24">
+                    <use xlink:href="#bootstrap" />
+                </svg>
+                <span class="fs-5 fw-semibold">PaisagensViews</span>
+            </a>
+            <ul class="list-unstyled ps-0">
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#home-collapse" aria-expanded="true">
+                        Locais em Deserto
+                    </button>
+                    <div class="collapse show" id="home-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="/desert/sahara" class="link-dark rounded">Deserto do Saara</a></li>
+                            <li><a href="/desert/sahara" class="link-dark rounded">Deserto da Arábia</a></li>
+                            <li><a href="/desert/sahara" class="link-dark rounded">Deserto da Patagônia</a></li>
+                            <li><a href="/desert/sahara" class="link-dark rounded">Deserto do Atacama</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#dashboard-collapse" aria-expanded="false">
+                        Outros Biomas
+                    </button>
+                    <div class="collapse" id="dashboard-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="/taiga" class="link-dark rounded">Taiga</a></li>
+                            <li><a href="/jungle" class="link-dark rounded">Selva</a></li>
+                            <li><a href="/swamp" class="link-dark rounded">Pantanal</a></li>
+                            <li><a href="/cerrado" class="link-dark rounded">Cerrado</a></li>
+                            <li><a href="/tundra" class="link-dark rounded">Tundra</a></li>
+                            <li><a href="/savannah" class="link-dark rounded">Savana</a></li>
+                            <li><a href="/prairie" class="link-dark rounded">Pradaria</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#orders-collapse" aria-expanded="false">
+                        Eventos
+                    </button>
+                    <div class="collapse" id="orders-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="link-dark rounded">Nossos eventos</a></li>
+                            <li><a href="#" class="link-dark rounded">Criar evento</a></li>
+                            <li><a href="#" class="link-dark rounded">Procurar evento</a></li>
+                            <li><a href="#" class="link-dark rounded">Parceiros</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="border-top my-3"></li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#account-collapse" aria-expanded="false">
+                        Perfil
+                    </button>
+                    <div class="collapse" id="account-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="link-dark rounded">Meu perfil</a></li>
+                            <li><a href="#" class="link-dark rounded">Configurações</a></li>
+                            <li><a href="#" class="link-dark rounded">Sair</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </aside>
 
-    <p style="color: black;">
-        O Deserto do Saara (português brasileiro) ou Deserto do Sara, ou Deserto do Sáara (português europeu)
-        (em árabe: الصحراء الكبرى; romaniz.: aṣ-ṣaḥrā al-koubra) é conhecido por ser o maior deserto quente do
-        mundo. Oficialmente, é o terceiro maior deserto da Terra, logo após a Antártida e o Ártico, pois estas
-        duas também são consideradas desertos. Localizado no Norte da África, tem uma área total de 9 065
-        000 km², sendo sua área equiparável à da Europa (10 400 000 km²) e à área dos Estados Unidos, e maior
-        que a área de muitos países continentais tais como Brasil, Austrália e Índia. O nome Saara é uma
-        transliteração da palavra árabe صحراء, que por sua vez é a tradução da palavra tuaregue tenere (deserto).
-        O deserto do Saara compreende parte dos seguintes países e territórios: Argélia, Chade, Egito, Líbia,
-        Mali, Mauritânia, Marrocos, Níger, Saara Ocidental, Sudão e Tunísia. Atualmente vivem cerca de 2,5
-        milhões de pessoas na região do Saara.
-    </p>
+    <article class="col container">
+        <div class="main-content-text">
+            <h2 style="color: black; margin-left: 20px; margin-top: 10px;"> Deserto do Saara </h2>
+
+            <p style="color: black;">
+                O Deserto do Saara (português brasileiro) ou Deserto do Sara, ou Deserto do Sáara (português europeu)
+                (em árabe: الصحراء الكبرى; romaniz.: aṣ-ṣaḥrā al-koubra) é conhecido por ser o maior deserto quente do
+                mundo. Oficialmente, é o terceiro maior deserto da Terra, logo após a Antártida e o Ártico, pois estas
+                duas também são consideradas desertos. Localizado no Norte da África, tem uma área total de 9 065
+                000 km², sendo sua área equiparável à da Europa (10 400 000 km²) e à área dos Estados Unidos, e maior
+                que a área de muitos países continentais tais como Brasil, Austrália e Índia. O nome Saara é uma
+                transliteração da palavra árabe صحراء, que por sua vez é a tradução da palavra tuaregue tenere
+                (deserto).
+                O deserto do Saara compreende parte dos seguintes países e territórios: Argélia, Chade, Egito, Líbia,
+                Mali, Mauritânia, Marrocos, Níger, Saara Ocidental, Sudão e Tunísia. Atualmente vivem cerca de 2,5
+                milhões de pessoas na região do Saara.
+            </p>
+        </div>
+
+    </article>
 </div>

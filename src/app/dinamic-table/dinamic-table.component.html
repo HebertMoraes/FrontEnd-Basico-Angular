@@ -1,9 +1,9 @@
 <div class="container">
     <div class="table-responsive">
-        <button onclick="adicionaLinha('tbl')">Adicionar</button>
+        <button type="button" class="btn btn-success" onclick="adicionaLinha('tbl')">Adicionar</button>
         <table id="tbl" class="table table-striped table-bordered">
             <thead>
-                <tr>
+                <tr style="text-align: center; vertical-align: middle;">
                     <th scope="col">#</th>
                     <th scope="col">Data-hora</th>
                     <th scope="col">Localização</th>
@@ -12,14 +12,16 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr style="text-align: center; vertical-align: middle;">
                     <td>testeee</td>
                     <td>testeee</td>
                     <td>testeee</td>
                     <td>testeee</td>
-                    <td>
-                        <button id="idBtnEdit" onclick="editRow(this)">Editar</button>
-                        <button onclick="removeRow(this)">Remover</button>
+                    <td style="text-align: center; vertical-align: middle;">
+                        <div class="d-flex justify-content-evenly">
+                            <button type="button" class="btn btn-primary" id="idBtnEdit" onclick="editRow(this)">Editar</button>
+                            <button type="button" class="btn btn-danger" onclick="removeRow(this)">Remover</button>
+                        </div>
                     </td>
                 </tr>
             </tbody>

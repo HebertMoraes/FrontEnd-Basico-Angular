@@ -1,11 +1,12 @@
-
 .modal {
   width: 80%;
-} 
+}
+
 .modal-content {
   width: 80%;
 }
-.nav a{
+
+.nav a {
   margin-left: 30%;
 }
 
@@ -13,11 +14,12 @@
   .modal {
     width: 60%;
   }
+
   .modal-content {
     width: 60%;
   }
 
-  .nav a{
+  .nav a {
     margin-left: 40%;
   }
 }
@@ -26,11 +28,12 @@
   .modal {
     width: 40%;
   }
+
   .modal-content {
     width: 40%;
   }
 
-  .nav a{
+  .nav a {
     margin-left: 50%;
   }
 }
@@ -39,29 +42,59 @@
   background-color: rgba(59, 57, 57, 0.164);
 }
 
-@media (max-width: 1024px) {
-  .nav-bar-actual { 
-    display: block;
-  }
-  .side-menu-xl{
-    display: none;
-  }
+
+
+.bi {
+  vertical-align: -.125em;
+  pointer-events: none;
+  fill: currentColor;
 }
 
-@media (min-width: 1024px) {
-  .nav-bar-actual { 
-    display: none;
-  }
-  .side-menu-xl{
-    display: block;
-    padding-top: 5%;
-  }
+.btn-toggle {
+  display: inline-flex;
+  align-items: center;
+  padding: .25rem .5rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, .65);
+  background-color: transparent;
+  border: 0;
 }
 
-.sidebar-2{
-  position:fixed;
-  background-color:#fff;
-  height:1200px;
-  width:200px;
-  padding-left:10px;
+.btn-toggle:hover,
+.btn-toggle:focus {
+  color: rgba(0, 0, 0, .85);
+  background-color: #d2f4ea;
+}
+
+.btn-toggle::before {
+  width: 1.25em;
+  line-height: 0;
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+  transition: transform .35s ease;
+  transform-origin: .5em 50%;
+}
+
+.btn-toggle[aria-expanded="true"] {
+  color: rgba(0, 0, 0, .85);
+}
+
+.btn-toggle[aria-expanded="true"]::before {
+  transform: rotate(90deg);
+}
+
+.btn-toggle-nav a {
+  display: inline-flex;
+  padding: .1875rem .5rem;
+  margin-top: .125rem;
+  margin-left: 1.25rem;
+  text-decoration: none;
+}
+
+.btn-toggle-nav a:hover,
+.btn-toggle-nav a:focus {
+  background-color: #d2f4ea;
+}
+
+.fw-semibold {
+  font-weight: 600;
 }

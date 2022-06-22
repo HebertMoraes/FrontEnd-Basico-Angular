@@ -1,58 +1,139 @@
 <main-nav-bar></main-nav-bar>
 
-<!-- {{testeClass.PopUpHello()}} -->
+<div class="row">
+    <aside class="col-3 d-none d-md-block bg-light">
 
-<div class="main-content-text container">
+        <div class="p-3 bg-light" style="margin-top: 70px; position: fixed;" id="fixed-side-menu-left">
+            <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+                <svg class="bi me-2" width="30" height="24">
+                    <use xlink:href="#bootstrap" />
+                </svg>
+                <span class="fs-5 fw-semibold">PaisagensViews</span>
+            </a>
+            <ul class="list-unstyled ps-0">
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#home-collapse" aria-expanded="true">
+                        Locais em Deserto
+                    </button>
+                    <div class="collapse show" id="home-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="/desert/sahara" class="link-dark rounded">Deserto do Saara</a></li>
+                            <li><a href="/desert/sahara" class="link-dark rounded">Deserto da Arábia</a></li>
+                            <li><a href="/desert/sahara" class="link-dark rounded">Deserto da Patagônia</a></li>
+                            <li><a href="/desert/sahara" class="link-dark rounded">Deserto do Atacama</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#dashboard-collapse" aria-expanded="false">
+                        Outros Biomas
+                    </button>
+                    <div class="collapse" id="dashboard-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="/taiga" class="link-dark rounded">Taiga</a></li>
+                            <li><a href="/jungle" class="link-dark rounded">Selva</a></li>
+                            <li><a href="/swamp" class="link-dark rounded">Pantanal</a></li>
+                            <li><a href="/cerrado" class="link-dark rounded">Cerrado</a></li>
+                            <li><a href="/tundra" class="link-dark rounded">Tundra</a></li>
+                            <li><a href="/savannah" class="link-dark rounded">Savana</a></li>
+                            <li><a href="/prairie" class="link-dark rounded">Pradaria</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#orders-collapse" aria-expanded="false">
+                        Eventos
+                    </button>
+                    <div class="collapse" id="orders-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="link-dark rounded">Nossos eventos</a></li>
+                            <li><a href="#" class="link-dark rounded">Criar evento</a></li>
+                            <li><a href="#" class="link-dark rounded">Procurar evento</a></li>
+                            <li><a href="#" class="link-dark rounded">Parceiros</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="border-top my-3"></li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#account-collapse" aria-expanded="false">
+                        Perfil
+                    </button>
+                    <div class="collapse" id="account-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="link-dark rounded">Meu perfil</a></li>
+                            <li><a href="#" class="link-dark rounded">Configurações</a></li>
+                            <li><a href="#" class="link-dark rounded">Sair</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </aside>
 
-    <h2 style="color: black; margin-left: 20px; margin-top: 10px;"> Bioma Deserto </h2>
+    <article class="col container">
+        <div class="main-content-text">
+            <h2 style="color: black; margin-left: 20px; margin-top: 100px;">Bioma Deserto</h2>
 
-    <p style="color: black;">
-        O bioma denominado deserto é encontrado em regiões de baixa umidade, onde existe uma grande variação na
-        temperatura ao longo do dia, com pouca ou quase nenhuma precipitação ao longo do ano e o clima é
-        predominantemente seco.
-    </p>
-    <p style="color: black;">
-        A vegetação geralmente é constituída por gramíneas e pequenos arbustos, sendo rala e espaçada, ocupando
-        principalmente fendas do solo ou debaixo das rochas em que a pouca água disponível pode se acumular.
-        A seleção natural fez com que as plantas mais resistentes sobrevivessem às limitações do deserto e com
-        o tempo as plantas desenvolveram estratégias para se adaptar à escassez de água. Os cactos, por exemplo,
-        apresentam sistemas de raízes superficiais, cobrindo uma grande área, para absorver a água das chuvas
-        passageiras. Seu caule é capaz de armazenar água (parênquima aquífero) e fazer fotossíntese (CAM), as
-        folhas com a evolução da espécie foram substituídas por espinhos para impedir uma transpiração excessiva
-        pelos estômatos. Essas transformações nas plantas desérticas são conhecidas por xeromorfismo
-        (forma adaptada para locais secos).
-    </p>
-    <p style="color: black;">
-        A vegetação esparsa e o tipo de solo arenoso deste bioma terrestre que é o deserto contribuem para uma
-        rápida perda radiativa de energia fazendo com que estes ambientes possam ser tornar extremamente frios
-        durante a noite e extremamente quentes durante o dia.
-    </p>
-    <p style="color: black;">
-        A fauna dos desertos é limitada pelas condições extremas, sendo composta predominantemente por animais
-        roedores (ratos-canguru e marmotas), répteis (cobras e lagartos), escorpiões e insetos. A maioria destes
-        animais desenvolvem suas atividades no período noturno, quando as temperaturas são mais baixas, e
-        durante o dia permanecem refugiados das temperaturas elevadas. Os camelos e os dromedários são mamíferos
-        do deserto, podem passar até um mês sem beber água e vários dias sem se alimentarem, pois possuem a
-        corcova que serve como reserva de gordura.
-    </p>
-    <p style="color: black;">
-        Os desertos podem ser subdivididos em quentes (principalmente tropicais e subtropicais) ou frios
-        (principalmente de latitudes médias). Os biomas de deserto quentes são causados pela presença de ar seco
-        e pela baixa precipitação a partir das células de alta pressão subtropicais. São áreas muito secas onde
-        a vegetação varia de quase nenhuma até numerosos arbustos xerófilos, suculentos e na forma de
-        espinheiros.
-        Já os biomas de deserto frios tendem a ocorrer em latitudes médias e nestas regiões o deslocamento
-        sazonal
-        das células de alta pressão subtropicais tem influência pelo menos por seis meses do ano. As localidades
-        no interior são secas devido à distância das fontes de umidade ou porque se encontram protegidas das
-        chuvas
-        por estarem perto de montanhas. A combinação destas duas possibilidades produz os desertos frios. No
-        inverno
-        ocorrem precipitações leves, podendo nevar. Os verões são quentes enquanto as noites tendem a ser mais
-        frescas.
-    </p>
+            <p style="color: black;">
+                O bioma denominado deserto é encontrado em regiões de baixa umidade, onde existe uma grande variação na
+                temperatura ao longo do dia, com pouca ou quase nenhuma precipitação ao longo do ano e o clima é
+                predominantemente seco.
+            </p>
+            <p style="color: black;">
+                A vegetação geralmente é constituída por gramíneas e pequenos arbustos, sendo rala e espaçada, ocupando
+                principalmente fendas do solo ou debaixo das rochas em que a pouca água disponível pode se acumular.
+                A seleção natural fez com que as plantas mais resistentes sobrevivessem às limitações do deserto e com
+                o tempo as plantas desenvolveram estratégias para se adaptar à escassez de água. Os cactos, por exemplo,
+                apresentam sistemas de raízes superficiais, cobrindo uma grande área, para absorver a água das chuvas
+                passageiras. Seu caule é capaz de armazenar água (parênquima aquífero) e fazer fotossíntese (CAM), as
+                folhas com a evolução da espécie foram substituídas por espinhos para impedir uma transpiração excessiva
+                pelos estômatos. Essas transformações nas plantas desérticas são conhecidas por xeromorfismo
+                (forma adaptada para locais secos).
+            </p>
+            <p style="color: black;">
+                A vegetação esparsa e o tipo de solo arenoso deste bioma terrestre que é o deserto contribuem para uma
+                rápida perda radiativa de energia fazendo com que estes ambientes possam ser tornar extremamente frios
+                durante a noite e extremamente quentes durante o dia.
+            </p>
+            <p style="color: black;">
+                A fauna dos desertos é limitada pelas condições extremas, sendo composta predominantemente por animais
+                roedores (ratos-canguru e marmotas), répteis (cobras e lagartos), escorpiões e insetos. A maioria destes
+                animais desenvolvem suas atividades no período noturno, quando as temperaturas são mais baixas, e
+                durante o dia permanecem refugiados das temperaturas elevadas. Os camelos e os dromedários são mamíferos
+                do deserto, podem passar até um mês sem beber água e vários dias sem se alimentarem, pois possuem a
+                corcova que serve como reserva de gordura.
+            </p>
+            <p style="color: black;">
+                Os desertos podem ser subdivididos em quentes (principalmente tropicais e subtropicais) ou frios
+                (principalmente de latitudes médias). Os biomas de deserto quentes são causados pela presença de ar seco
+                e pela baixa precipitação a partir das células de alta pressão subtropicais. São áreas muito secas onde
+                a vegetação varia de quase nenhuma até numerosos arbustos xerófilos, suculentos e na forma de
+                espinheiros.
+                Já os biomas de deserto frios tendem a ocorrer em latitudes médias e nestas regiões o deslocamento
+                sazonal
+                das células de alta pressão subtropicais tem influência pelo menos por seis meses do ano. As localidades
+                no interior são secas devido à distância das fontes de umidade ou porque se encontram protegidas das
+                chuvas
+                por estarem perto de montanhas. A combinação destas duas possibilidades produz os desertos frios. No
+                inverno
+                ocorrem precipitações leves, podendo nevar. Os verões são quentes enquanto as noites tendem a ser mais
+                frescas.
+            </p>
 
+            <!-- <p class="color-black mt-5">
+                {{getBiomes()}}
+            </p> -->
+
+        </div>
+        <app-carrousel></app-carrousel>
+
+        <app-dinamic-table></app-dinamic-table>
+
+        
+
+    </article>
 </div>
-<app-carrousel></app-carrousel>
-
-<app-dinamic-table></app-dinamic-table>

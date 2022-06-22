@@ -1,9 +1,9 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { map, Observable } from 'rxjs';
+import { Biome } from 'src/app/models/biome';
 
-declare function PopUpHello(): void;
-
-// declare function adicionaLinha(): void;
+// declare function PopUpHello(): void;
 
 @Component({
   selector: 'app-desert',
@@ -12,16 +12,15 @@ declare function PopUpHello(): void;
 })
 export class DesertComponent implements OnInit {
 
-  eventDataRaw = [
-    { location: "Arabian", biome: "Desert" },
-    { location: "Saara", biome: "Desert" }
-  ];
+  allBiomes!: Biome;
 
-  public assetsFolder = '../../../assets/biomes/desert/';
-
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-    // LoadTableData(this.eventDataRaw);
+
+  }
+
+  getBiomes() {
+    this.http.get('http://localhost:3000/biomes').subscribe(biome => console.log(biome));
   }
 }

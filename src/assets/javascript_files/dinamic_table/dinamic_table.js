@@ -29,14 +29,18 @@ function adicionaLinha(idTabela) {
         celula2.innerHTML = `<input type='text'>`;
         celula3.innerHTML = `<input type='text'>`;
         celula4.innerHTML = `<input type='text'>`;
-        celula5.innerHTML = "<button id='idBtnEdit' onclick='editRow(this)'>Salvar</button> <button onclick='removeRow(this)'>Remover</button>";
+        // celula5.innerHTML = "<button id='idBtnEdit' onclick='editRow(this)'>Salvar</button> <button onclick='removeRow(this)'>Remover</button>";
+        celula5.innerHTML = `<div class="d-flex justify-content-evenly">
+        <button type="button" class="btn btn-primary" id="idBtnEdit" onclick="editRow(this)">Salvar</button>
+        <button type="button" class="btn btn-danger" onclick="removeRow(this)">Remover</button>
+    </div>`;
 
         inEdit = true;
     }
 }
 
 function removeRow(cell) {
-    var row = cell.parentNode.parentNode.rowIndex;
+    var row = cell.parentNode.parentNode.parentNode.rowIndex;
     document.getElementById('tbl').deleteRow(row);
 }
 
@@ -48,7 +52,7 @@ function editRow(btn) {
         var table = document.getElementById('tbl');
         for (var i = 0, row; row = table.rows[i]; i++) {
 
-            rowOfButtonEdit = btn.parentNode.parentNode;
+            rowOfButtonEdit = btn.parentNode.parentNode.parentNode;
 
             if (row == rowOfButtonEdit) {
                 for (var j = 0, col; col = row.cells[j]; j++) {
@@ -72,7 +76,7 @@ function editRow(btn) {
         var table = document.getElementById('tbl');
         for (var i = 0, row; row = table.rows[i]; i++) {
 
-            rowOfButtonEdit = btn.parentNode.parentNode;
+            rowOfButtonEdit = btn.parentNode.parentNode.parentNode;
 
             if (row == rowOfButtonEdit) {
                 for (var j = 0, col; col = row.cells[j]; j++) {

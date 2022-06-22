@@ -112,7 +112,7 @@
     background-image: url(src\assets\biomes\desert\favoritado.png);
 }
 
-@media (min-width: 320px) {
+/* @media (min-width: 320px) {
     .carousel {
         position: relative;
         width: 70%;
@@ -134,4 +134,4 @@
         margin-bottom: 7%;
         margin-left: 24%;
     }
-}
+} */

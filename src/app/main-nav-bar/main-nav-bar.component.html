@@ -3,89 +3,90 @@
     <a routerLink="" class="position-relative start-50">
       <img src="../../../assets/nav-bar/world-icon.ico">
     </a>
-    <button class="nav-bar-actual navbar-toggler position-end" type="button" data-bs-toggle="modal"
+    <button class="d-md-none navbar-toggler position-end" type="button" data-bs-toggle="modal"
       data-bs-target="#exampleModal">
       <span class="navbar-toggler-icon"></span>
     </button>
   </div>
 </nav>
-<div class="nav-bar-actual">
-  <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-fullscreen">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2 class="modal-title" id="exampleModalLabel"> Paisagens Views </h2>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
 
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item" (click)="selectLocation('desert')">Deserto
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item" (click)="selectLocation('desert/sahara')">Deserto do Saara</li>
-                <li class="list-group-item" (click)="selectLocation('desert/arabian')">Deserto da Arábia
-                </li>
-                <li class="list-group-item" (click)="selectLocation('desert/patagonia')">Deserto da
-                  Patagônia</li>
-                <li class="list-group-item" (click)="selectLocation('desert/atacama')">Deserto do Atacama
-                </li>
-              </ul>
-            </li>
-            <li class="list-group-item" (click)="selectLocation('taiga')">Taiga</li>
-            <li class="list-group-item" (click)="selectLocation('jungle')">Selva</li>
-            <li class="list-group-item" (click)="selectLocation('swamp')">Pantanal</li>
-            <li class="list-group-item" (click)="selectLocation('cerrado')">Cerrado</li>
-            <li class="list-group-item" (click)="selectLocation('tundra')">Tundra</li>
-            <li class="list-group-item" (click)="selectLocation('savannah')">Savana</li>
-            <li class="list-group-item" (click)="selectLocation('prairie')">Pradaria</li>
-          </ul>
-
-        </div>
-        <!-- <div class="modal-footer">
-          </div> -->
+<div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel" style="padding-top: 13px; padding-left: 13px;">Paisagens Views</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
+      <div class="modal-body bg-light">
+
+
+        <div class="p-3">
+          <ul class="list-unstyled ps-0">
+            <li class="mb-1">
+              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                data-bs-target="#home-collapse" aria-expanded="true">
+                Locais em Deserto
+              </button>
+              <div class="collapse show" id="home-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="/desert/sahara" class="link-dark rounded">Deserto do Saara</a></li>
+                  <li><a href="/desert/sahara" class="link-dark rounded">Deserto da Arábia</a></li>
+                  <li><a href="/desert/sahara" class="link-dark rounded">Deserto da Patagônia</a></li>
+                  <li><a href="/desert/sahara" class="link-dark rounded">Deserto do Atacama</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                data-bs-target="#dashboard-collapse" aria-expanded="false">
+                Outros Biomas
+              </button>
+              <div class="collapse" id="dashboard-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="/taiga" class="link-dark rounded">Taiga</a></li>
+                  <li><a href="/jungle" class="link-dark rounded">Selva</a></li>
+                  <li><a href="/swamp" class="link-dark rounded">Pantanal</a></li>
+                  <li><a href="/cerrado" class="link-dark rounded">Cerrado</a></li>
+                  <li><a href="/tundra" class="link-dark rounded">Tundra</a></li>
+                  <li><a href="/savannah" class="link-dark rounded">Savana</a></li>
+                  <li><a href="/prairie" class="link-dark rounded">Pradaria</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                data-bs-target="#orders-collapse" aria-expanded="false">
+                Eventos
+              </button>
+              <div class="collapse" id="orders-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="#" class="link-dark rounded">Nossos eventos</a></li>
+                  <li><a href="#" class="link-dark rounded">Criar evento</a></li>
+                  <li><a href="#" class="link-dark rounded">Procurar evento</a></li>
+                  <li><a href="#" class="link-dark rounded">Parceiros</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="border-top my-3"></li>
+            <li class="mb-1">
+              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                data-bs-target="#account-collapse" aria-expanded="false">
+                Perfil
+              </button>
+              <div class="collapse" id="account-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="#" class="link-dark rounded">Meu perfil</a></li>
+                  <li><a href="#" class="link-dark rounded">Configurações</a></li>
+                  <li><a href="#" class="link-dark rounded">Sair</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <!-- <div class="modal-footer">
+        </div> -->
     </div>
   </div>
-</div>
-
-<!-- <aside class="side-menu-xl col">
-  <ul class="nav flex-column">
-    <li class="nav-item">
-      <a class="nav-link active" href="#">Active</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#">Disabled</a>
-    </li>
-  </ul>
-</aside> -->
-
-<div class="side-menu-xl">
-
-  <ul class="sidebar-2">
-    <li class="list-group-item" (click)="selectLocation('desert')">Deserto
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item" (click)="selectLocation('desert/sahara')">Deserto do Saara</li>
-        <li class="list-group-item" (click)="selectLocation('desert/arabian')">Deserto da Arábia
-        </li>
-        <li class="list-group-item" (click)="selectLocation('desert/patagonia')">Deserto da
-          Patagônia</li>
-        <li class="list-group-item" (click)="selectLocation('desert/atacama')">Deserto do Atacama
-        </li>
-      </ul>
-    </li>
-    <li class="list-group-item" (click)="selectLocation('taiga')">Taiga</li>
-    <li class="list-group-item" (click)="selectLocation('jungle')">Selva</li>
-    <li class="list-group-item" (click)="selectLocation('swamp')">Pantanal</li>
-    <li class="list-group-item" (click)="selectLocation('cerrado')">Cerrado</li>
-    <li class="list-group-item" (click)="selectLocation('tundra')">Tundra</li>
-    <li class="list-group-item" (click)="selectLocation('savannah')">Savana</li>
-    <li class="list-group-item" (click)="selectLocation('prairie')">Pradaria</li>
-    <li class="list-group-item" (click)="selectLocation('favorites')">Favoritos</li>
-  </ul>
 </div>
